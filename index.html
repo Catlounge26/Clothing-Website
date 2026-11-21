@@ -35,19 +35,14 @@
       <div class="product">
         <div class="gallery">
           <div class="gallery-main">
-            <!-- Placeholder drawing. Replace with a real photo: <img src="images/front.jpg" alt="..."> -->
-            <svg viewBox="0 0 300 260" aria-hidden="true">
-              <path d="M24 74 Q150 46 276 74" fill="none" stroke="#1f1d1b" stroke-width="7" stroke-linecap="round"/>
-              <path d="M96 66 Q150 56 204 66 Q186 150 160 214 Q150 228 140 214 Q114 150 96 66Z" fill="#1f1d1b"/>
-              <path d="M104 72 Q150 64 196 72" fill="none" stroke="#3a3733" stroke-width="2"/>
-            </svg>
-            <span class="placeholder-tag" data-gallery-label>Photo: Front</span>
+            <img id="gallery-img" src="images/gstring-front.jpg" alt="Naturals G-String Brief in black, front view" width="1200" height="1500">
+            <span class="placeholder-tag">Sample image</span>
           </div>
           <div class="thumbs" role="group" aria-label="Photos">
-            <button class="thumb" type="button" aria-pressed="true">Front</button>
-            <button class="thumb" type="button" aria-pressed="false">Slim back</button>
-            <button class="thumb" type="button" aria-pressed="false">Soft edge close-up</button>
-            <button class="thumb" type="button" aria-pressed="false">On body</button>
+            <button class="thumb" type="button" aria-pressed="true" data-src="images/gstring-front.jpg" data-alt="Front view"><img src="images/gstring-front.jpg" alt="" loading="lazy"><span class="sr-only">Front</span></button>
+            <button class="thumb" type="button" aria-pressed="false" data-src="images/gstring-back.jpg" data-alt="Slim back view"><img src="images/gstring-back.jpg" alt="" loading="lazy"><span class="sr-only">Slim back</span></button>
+            <button class="thumb" type="button" aria-pressed="false" data-src="images/gstring-edge.jpg" data-alt="Close-up of the soft flat elastic edge"><img src="images/gstring-edge.jpg" alt="" loading="lazy"><span class="sr-only">Soft edge close-up</span></button>
+            <button class="thumb" type="button" aria-pressed="false" data-src="images/gstring-5pack.jpg" data-alt="Five black g-strings laid out"><img src="images/gstring-5pack.jpg" alt="" loading="lazy"><span class="sr-only">5-pair pack</span></button>
           </div>
         </div>
 
@@ -172,7 +167,8 @@
     <section class="block tint" id="story">
       <div class="wrap story">
         <div class="story-img">
-          <span class="placeholder-tag">Photo placeholder</span>
+          <img src="images/story.jpg" alt="Folded black g-strings on a white tee with a gum leaf sprig" loading="lazy">
+          <span class="placeholder-tag">Sample image</span>
         </div>
         <div class="story-text">
           <p class="eyebrow">Why this shop exists</p>

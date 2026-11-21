@@ -99,12 +99,15 @@ function setupProductForm() {
 
 /* ---------- Main page: gallery thumbnails ---------- */
 function setupGallery() {
-  const label = document.querySelector("[data-gallery-label]");
+  const main = document.querySelector("#gallery-img");
   document.querySelectorAll(".thumb").forEach(btn => {
     btn.addEventListener("click", () => {
       document.querySelectorAll(".thumb").forEach(b => b.setAttribute("aria-pressed", "false"));
       btn.setAttribute("aria-pressed", "true");
-      if (label) label.textContent = "Photo: " + btn.textContent.trim();
+      if (main && btn.dataset.src) {
+        main.src = btn.dataset.src;
+        main.alt = btn.dataset.alt || "";
+      }
     });
   });
 }
